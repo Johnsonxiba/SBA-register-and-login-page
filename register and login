@@ -1,0 +1,45 @@
+#include <iostream>
+#include <fstream>
+#include <time.h>
+#include <bits/stdc++.h>
+#include <cstdlib>
+using namespace std;
+
+void timeframe(double second){
+    time_t starttime=time(0);
+    while(true){
+    time_t endtime=time(0);
+    if (difftime(endtime,starttime)>=second){
+      break;
+    }
+    }
+}
+
+int main ()  {
+ifstream regispicture("regis.txt");
+bool match=false;
+string input,output;
+cout<<"Enter [R] to Register a account"<<endl<<"Enter [L] to login a account"<<endl;
+cin >> input;
+
+while(input!="R"&&input!="L"){
+    cout<<"Invalid error"<<endl<<"Enter [R] to Register a account"<<endl<<"Enter [L] to login a account"<<endl;
+    cin>>input;
+}
+if(input=="R"){
+    for(int i=0;i<8;i++){
+            getline(regispicture,output);
+            cout<<output<<endl;
+        }
+        cout<<"Enter your username"<<endl;
+        cin>>input;
+}
+cout<<input;
+
+
+return 0;
+
+}
+
+
+
