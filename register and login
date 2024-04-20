@@ -16,7 +16,7 @@ void timeframe(double second){
 }
 
 int main ()  {
-ifstream regispicture("regis.txt");
+ifstream regispicture("icon2.txt");
 bool match=false;
 string input,output;
 cout<<"Enter [R] to Register a account"<<endl<<"Enter [L] to login a account"<<endl;
